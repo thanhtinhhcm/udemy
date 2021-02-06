@@ -1,0 +1,26 @@
+.topCategories{
+    width: 90%;
+    padding: 0;
+    .topCategories-content{
+
+        .topCategories-title{
+            @include styleText($color-black-0, $fs-3, $fw-bold);
+        }
+        .topcategories-items{
+            display: flex;
+            border: 1px solid $color-gray-7;
+            height: 60px;
+            margin-bottom: $mg-1 + 5;
+            box-shadow: 0 1px 6px 1px rgba(20, 23, 28, 0.1);
+            align-items: center;
+            .topcategories-icon{
+                @include styleText($color-black-0, $fs-3+6, $fw-normal); 
+                padding: 0 $pd-2;
+            }
+            &:hover{
+                box-shadow: 2px 3px 9px 3px rgba(20, 23, 28, 0.1);
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+footer {
+    .footer-content {
+        width: 95%;
+        padding: $pd-3;
+        padding-bottom: 0;
+        .footer__link {
+            // border-bottom: 1px solid $color-gray-4;
+            .link {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 110px;
+                li {
+                    list-style-type: none;
+                    .ude__teach,
+                    .ude__business {
+                        font-weight: 700;
+                    }
+                    a {
+                        @include styleText($color-blue, $fs-1, $fw-normal);
+                        text-decoration: none;
+                        span {
+                            @include styleText($color-blue, $fs-1, $fw-bold);
+                        }
+                        &:hover {
+                            color: $color-black-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-logo {
+        width: 95%;
+        .logo {
+            display: flex;
+            img {
+                width: 110px;
+                margin-right: $mg-2;
+            }
+            p {
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+                padding-top: 23px;
+            }
+        }
+        .list-inline {
+            padding-left: 0;
+            list-style: none;
+            margin-left: -5px;
+        }
+        .link {
+            text-align: right;
+            @include styleText($color-blue, $fs-1, $fw-normal);
+            padding-top: $pd-3+5;
+            a {
+                text-decoration: none;
+                padding-right: $pd-2;
+                &:hover {
+                    color: $color-black-0;
+                }
+            }
+        }
+    }
+    .footer-line{
+        background: linear-gradient(to right, $color-red-2, #ec5252);
+        height: 7px;
+    }
+}
+
+//responsive
+@include responsive("medium"){
+    footer{
+        .footer-content{
+            display: none!important;
+        }
+    }
+    
+}
+@include responsive("small"){
+    footer{
+        .footer-logo{
+            .link{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+    
+}

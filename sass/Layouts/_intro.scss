@@ -1,0 +1,34 @@
+.intro{
+    background: linear-gradient(to right, $color-purple, $color-red-0);
+    .intro-content{
+        width: 90%;
+        margin: auto;
+        color: $color-white-0;
+        padding: $pd-2;
+        .intro-item{
+            align-items: center;
+            justify-content: center;
+            .intro-icon{
+                font-size: $fs-5;
+                margin-right: $mg-2;
+            }
+            .intro-detail{
+                padding-top: $pd-1;
+                p:first-child{
+                    @include styleText($color-white-0, $fs-0 + 2, $fw-bold);
+                    margin-bottom: 0;
+                }
+                p:last-child{
+                    @include styleText($color-white-0, $fs-0, $fw-normal);
+                }
+            }
+        }
+    }
+}
+
+//Responsive
+@include responsive("medium"){
+    .intro{
+        display: none!important;
+    }
+}

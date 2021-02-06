@@ -1,0 +1,52 @@
+.services{
+    background-color: $color-white-cream;
+    padding: $pd-3;
+    .services-items{
+        background-color: $color-white-0;
+        width: 100%;
+        height: 150px;
+        border: 1px solid $color-gray-7;
+        margin-right: $mg-1 + 5;
+        padding: $pd-1;
+        display: flex;
+        
+        .services-icon{
+            font-size: $fs-6;
+            padding: $pd-1;
+        }
+        .services-detail{
+            padding: $pd-1;
+            .services-title{
+                @include styleText($color-black-0, $fs-2, $fw-bold);
+            }
+            p{
+                @include styleText($color-gray-2, $fs-0, $fw-normal);
+            }
+        }
+    }
+
+}
+
+//responsive
+@include responsive("large"){
+    .services-content{
+        .services-items{
+            .services-icon{
+                @include styleText($color-black-0, $fs-3, $fw-normal);
+            }
+            .services-detail{
+                .services-title{
+                    @include styleText($color-black-0, $fs-0, $fw-bold);
+                }
+                p{
+                    @include styleText($color-gray-4, $fs-1, $fw-normal);
+                }
+            }
+        }
+    }
+}
+@include responsive("medium"){
+    .services{
+        display: none;
+    }
+}

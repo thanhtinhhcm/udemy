@@ -1,0 +1,88 @@
+.banner {
+    padding: $pd-3 0;
+    .banner-line {
+        background: linear-gradient(to right, #6e1a52, #ec5252);
+        height: 8px;
+    }
+    .banner-content__parent{
+        background-color: $color-black-0;
+        .banner-content {
+            color: $color-white-0;
+            height: 400px;
+            .banner-detail__icon {
+                margin-bottom: 32px;
+                padding-top: 48px;
+                .row {                  
+                    .ude__icon__banner {
+                        @include styleText($color-white-0, $fs-4, $fw-normal);
+                    }
+                }
+            }
+            .banner-detail__content{
+                .text-center{
+                    align-self: center;
+                    .ude__icon__banner {
+                        @include styleText($color-white-0, $fs-4, $fw-normal);
+                        align-self: center;
+                    }
+                    .banner-title{
+                        @include styleText($color-white-0, $fs-3, $fw-bold);
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+
+// Responsive
+@include responsive("large"){
+    .banner-detail__icon{
+        display: none!important;
+    }
+    .banner-detail__content{
+        .ude__icon__banner{
+            display: none;
+        }
+    .banner-detail__child{
+        align-self: center;
+        padding: 115px 0;
+        .banner-title{
+            @include styleText($color-white-0, $fs-6+4, $fw-bold);
+        }
+        p{
+            @include styleText($color-white-0, $fs-2, $fw-normal);
+        }
+        
+    }    
+    }
+}
+@include responsive("medium"){
+    .banner-detail__icon{
+        display: none!important;
+    }
+    .banner-detail__content{
+        .ude__icon__banner{
+            display: none;
+        }
+    .banner-detail__child{
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        padding: 110px 0;
+    }    
+    }
+}
+@include responsive("small"){
+    .banner-detail__child{
+        padding: 110px 0;
+        .banner-title{
+            @include styleText($color-white-0, $fs-3, $fw-bold);
+        }
+        p{
+            @include styleText($color-white-0, $fs-0, $fw-normal);
+        }
+        
+    }
+}

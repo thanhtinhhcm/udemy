@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "udemy",
+			"path": "..\\.."
+		},
+		{
+			"name": "BaiTapTrenLop",
+			"path": "..\\..\\..\\..\\CyberSoft\\BaiTapTrenLop"
+		},
+		{
+			"name": "FE62",
+			"path": "..\\..\\.."
+		},
+		{
+			"name": "Git",
+			"path": "..\\..\\..\\Git"
+		},
+		{
+			"name": "demoGitTinh",
+			"path": "..\\..\\..\\Git\\demoGitTinh"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BaiTapTrenLop"
+	}
+}

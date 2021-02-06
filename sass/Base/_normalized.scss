@@ -1,0 +1,37 @@
+// Được dùng để thay đổi các thuộc tính của thư viện ngoài
+.owl-prev{
+    position: absolute;
+    top: 33%;
+    left: -3%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%!important;
+    background-color: $color-white-0!important;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+    span{
+        @include styleText($color-blue, $fs-4, $fw-normal);
+        line-height: 0.8;
+    }
+    &:focus{
+        outline: none;
+        //khi click chuột vào button thì ko xuất hiện đường viền bên ngoài nút button
+    }
+}
+.owl-next{
+    position: absolute;
+    top: 33%;
+    right: -3%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%!important;
+    background-color: $color-white-0!important;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+    span{
+        @include styleText($color-blue, $fs-4, $fw-normal);
+        line-height: 0.8;
+    }
+    &:focus{
+        outline: none;
+        //khi click chuột vào button thì ko xuất hiện đường viền bên ngoài nút button
+    }
+}

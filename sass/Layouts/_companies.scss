@@ -1,0 +1,31 @@
+.companies{
+    background-color: $color-gray-5;
+    .companies-content{
+        // width: 90%;
+        .companies-content__brand{
+            .brand__info{
+                text-align: center;
+                p{
+                    @include styleText($color-black-0, $fs-1, $fw-normal);
+                    padding: $pd-2*2;
+                }
+            }
+            .brands-logo{
+                display: flex;
+                .brands{
+                    padding: 0 $pd-3*2;
+                }
+            }
+        }
+        .companies-content__info{
+            padding: $pd-3*2;
+            .companies-content__detail__text{
+                text-align: center;
+                // width: 70%;
+                .companies-title{
+                    @include styleText($color-black-0, $fs-2, $fw-bold);
+                }
+            }
+        }
+    }
+}
